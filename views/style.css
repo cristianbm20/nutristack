@@ -26,7 +26,7 @@ form {
 .img_logo {
     width: 250px;
     justify-self: center;
-    border-radius: 50px;
+    border-radius: 60px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
 }
 
