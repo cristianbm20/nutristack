@@ -8,8 +8,47 @@
 
 body {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
 }
+
+header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: rgba(246, 246, 246, 0.85);
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.imagen-header{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+
 
 form {
     margin: auto;
