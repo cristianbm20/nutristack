@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Error handling
     if (errors.length > 0) {
-      const errorList = document.getElementById('error-list')
+      const errorList = document.getElementById('error-messages')
       errorList.innerHTML = ''
       errors.forEach((error) => {
         const li = document.createElement('li')

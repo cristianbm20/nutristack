@@ -11,8 +11,6 @@ body {
     min-height: 100vh;
 }
 
-
-
 form {
     margin: auto;
     width: 90%;
@@ -29,6 +27,12 @@ form {
     border-radius: 60px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
 }
+
+.error-container {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
 
 .form_container {
     margin-top: 3em;
