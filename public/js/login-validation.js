@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // User validation
     if (!user || user.length < 3) {
-      errors.push('El nombre de usuario debe tener al menos 3 caracteres')
+      errors.push('El email no es válido')
     }
 
     // Password validation
