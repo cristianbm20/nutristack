@@ -10,6 +10,7 @@ body {
     display: flex;
     margin: 0;
     position: relative;
+    justify-content: center;
 }
 
 header {
@@ -20,10 +21,11 @@ header {
     background-color: rgba(246, 246, 246, 0.85);
     align-items: center;
     border-radius: 10px;
-    width: 95%;
+    width: 70%;
 }
 
 .nombre-web{
+    display: none;
     color: black;
     font-size: 40px;
     font-weight: 800;
@@ -65,33 +67,32 @@ nav a:hover{
     z-index: -1;
 }
 
-
-
-
-
-
-
-
-
-
 .inicio-bento {
     position: absolute;
     top: 32vh;
     left: 0;
     right: 0;
-    padding: 0 20px;
+    padding: 50px 0 20px;
     box-sizing: border-box;
     margin: auto;
-    max-width: 1550px;
+    max-width: 75%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 42px;
-    max-height: 650px;
     justify-items: center;
     align-items: center;
+    
 }
 
 @media (width > 921px) {
+
+    .nombre-web{
+        display: block;
+    }
+
+    .inicio-bento{
+        max-height: 650px;
+    }
 
     .detalles-menu {
         grid-area: 1 / 2 / 3 / 3;
