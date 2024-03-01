@@ -24,7 +24,7 @@ header {
     width: 70%;
 }
 
-.nombre-web{
+.nombre-web {
     display: none;
     color: black;
     font-size: 40px;
@@ -55,8 +55,9 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover{
-    color: rgba(0, 103, 123, 0.7);;
+nav a:hover {
+    color: rgba(0, 103, 123, 0.7);
+    ;
 }
 
 .imagen-header {
@@ -81,16 +82,16 @@ nav a:hover{
     gap: 20px;
     justify-items: center;
     align-items: center;
-    
+
 }
 
 @media (width > 921px) {
 
-    .nombre-web{
+    .nombre-web {
         display: block;
     }
 
-    .inicio-bento{
+    .inicio-bento {
         max-height: 650px;
     }
 
@@ -108,16 +109,24 @@ nav a:hover{
         object-fit: cover;
     }
 
+    .detalles-menu ul li {
+        margin-left: 95px;
+    }
 
+
+}
+
+.detalles-menu h3 {
+    font-size: 35px;
+    font-weight: 800;
 }
 
 .detalles-menu ul li {
     list-style-type: '✔️';
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
     width: 380px;
-
 }
 
 
@@ -226,7 +235,7 @@ nav a:hover{
     margin: auto;
 }
 
-figure .capa img{
+figure .capa img {
     height: 120px;
     width: auto;
 }
@@ -288,7 +297,6 @@ form {
 
 .form_label {
     color: var(--color);
-    cursor: pinter;
     position: absolute;
     top: 0;
     left: 5px;
@@ -315,7 +323,6 @@ form {
     height: 1px;
     background-color: #386672;
     transform: scale(0);
-    transform: left bottom;
     transition: transform .4s;
 }
 
