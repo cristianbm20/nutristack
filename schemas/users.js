@@ -5,7 +5,7 @@ const userSchema = z.object({
   name: z.string({
     required_error: 'Name is required'
   }).min(3).max(24),
-  username: z.string({
+  surname: z.string({
     required_error: 'Username is required'
   }).min(3).max(24),
   phone: z.string().min(3).max(24).regex(/^[0-9]{10}$/),

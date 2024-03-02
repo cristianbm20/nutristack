@@ -17,7 +17,7 @@ export class UsersController {
 
   login = async (req, res) => {
     const { email } = req.params
-    const user = await this.movieModel.getByEmail({ email })
+    const user = await this.userModel.getByEmail({ email })
 
     if (user) return res.json(email)
     res.status(404).json({ message: 'User not exists' })

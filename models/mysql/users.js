@@ -5,7 +5,7 @@ const DEFAULT_CONFIG = {
   user: 'root',
   port: 3306,
   password: '',
-  database: 'nutristackdb'
+  database: 'nutristack'
 }
 
 // const PROD_CONFIG = {
@@ -23,7 +23,7 @@ const connection = await mysql.createConnection(connectionString)
 export class UserModel {
   static async getByEmail ({ email }) {
     const [users] = await connection.query(
-      'SELECT email, password FROM movies WHERE email = ?;',
+      'SELECT email, password FROM users WHERE email = ?;',
       [email]
     )
 
@@ -44,7 +44,7 @@ export class UserModel {
     const [uuidResult] = await connection.query('SELECT UUID() uuid;')
     const [{ uuid }] = uuidResult
 
-    const insertQuery = `INSERT INTO movies (id, name, surname, phone, email, password) VALUES (UUID_TO_BIN('${uuid}'), ?, ?, ?, ?, ?);`
+    const insertQuery = `INSERT INTO users (id, name, surname, phone, email, password) VALUES (UUID_TO_BIN('${uuid}'), ?, ?, ?, ?, ?);`
 
     try {
       await connection.query(insertQuery, [
