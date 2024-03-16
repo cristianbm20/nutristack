@@ -7,16 +7,12 @@
 }
 
 body {
-    margin: 0;
-    height: 200vh;
-}
-
-.contenedor {
     display: flex;
     justify-content: center;
-    height: 100%;
-    background-color: #252525;
+    background: #252525;
+    margin: 0;
 }
+
 
 .contenido {
     position: relative;
@@ -31,8 +27,18 @@ body {
     box-shadow: 0px 25px 45px rgba(255, 229, 94, 1);
 }
 
+.imagen-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1450px;
+    max-height: 30vh;
+    z-index: -1;
+}
+
 header {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 18vh;
     display: flex;
     justify-content: space-around;
     height: 70px;
@@ -75,32 +81,22 @@ nav a {
 
 nav a:hover {
     color: rgba(0, 103, 123, 0.7);
-    ;
 }
 
-.imagen-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    max-width: 1450px;
-    max-height: 30vh;
-    z-index: -1;
-}
+
 
 .inicio-bento {
-    position: absolute;
     top: 32vh;
     left: 0;
     right: 0;
     padding: 50px 0 20px;
-    /* box-sizing: border-box; */
-    margin: auto;
     max-width: 75%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 20px;
     justify-items: center;
     align-items: center;
+    margin-bottom: 17vh;
 }
 
 @media (width > 921px) {
@@ -194,7 +190,6 @@ nav a:hover {
     position: relative;
     height: 100%;
     cursor: pointer;
-    /* width: 350px; */
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
@@ -263,7 +258,6 @@ figure .capa img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100vh;
 }
 
 .planes h2{
@@ -280,10 +274,12 @@ figure .capa img {
 
   .slide-content {
     margin: 0 75px;
+    width: 1200px;
   }
 
   .card-wrapper{
-    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: grid;
     gap: 90px;
     height: 100%;
   }
