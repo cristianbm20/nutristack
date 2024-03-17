@@ -105,10 +105,6 @@ nav a:hover {
         display: block;
     }
 
-    .inicio-bento {
-        max-height: 650px;
-    }
-
     .detalles-menu {
         grid-area: 1 / 2 / 3 / 3;
         display: flex;
@@ -268,20 +264,18 @@ figure .capa img {
     display: flex;
     max-width: 1800px;
     width: 100%;
-    height: 621px;
     background-color: var(--color-principal);
   }
 
-  .slide-content {
-    margin: 0 75px;
-    width: 1200px;
-  }
 
   .card-wrapper{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     display: grid;
     gap: 90px;
     height: 100%;
+    max-width: 1300px;
+    width: 80vw;
+    place-items: center;
   }
 
   .card{
