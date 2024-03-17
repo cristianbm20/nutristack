@@ -9,128 +9,157 @@
 </head>
 
 <body>
-        <div class="contenido">
-            <img class="imagen-header" src="../public/img/inicio-header.png" alt="imagen de presentación">
-            <header>
-                <a href="#" class="logo">
-                    <img src="../public/img/logo.png" alt="logo de la web">
-                    <h1 class="nombre-web">NutriStack</h1>
-                </a>
-                <nav>
-                    <a href="" class="nav-link">Inicio</a>
-                    <a href="" class="nav-link">Planes</a>
-                    <a href="" class="nav-link">Menus</a>
-                    <a href="" class="nav-link">Productos</a>
-                </nav>
-            </header>
-            <section class="inicio-bento">
-                <figure>
-                    <img src="../public/img/vegan.png" alt="plato vegano">
-                    <div class="capa">
-                        <h3>SALUD Y COMODIDAD</h3>
-                        <p>¡A SOLO UN CLICK DE DISTANCIA!</p>
-                        <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
-                    </div>
-                </figure>
-                <figure>
-                    <img src="../public/img/ensalada.png" alt="plato de ensalada">
-                    <div class="capa">
-                        <h3>MENÚ VEGGIE</h3>
-                        <p>¡DESCUBRE NUESTROS PLATOS!</p>
-                        <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
-                    </div>
-                </figure>
-                <figure>
-                    <img src="../public/img/keto.png" alt="plato de dieta keto">
-                    <div class="capa">
-                        <h3>MENÚ KETO</h3>
-                        <p>¡DESCUBRE NUESTROS PLATOS!</p>
-                        <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
-                    </div>
-                </figure>
-                <section class="detalles-menu">
-                    <h3>¿Que ofrecemos?</h3>
-                    <ul>
-                        <li>Menús a la carta</li>
-                        <li>Menús personalizados</li>
-                        <li>Envíos gratis</li>
-                        <li>App y asesoramiento nutricional</li>
-                    </ul>
-                    <button class="boton tipo1">
-                        <span class="btn-txt">¡Quiero saber más!</span>
-                    </button>
-                </section>
+    <div class="contenido">
+        <img class="imagen-header" src="../public/img/inicio-header.png" alt="imagen de presentación">
+        <header id="header">
+            <a href="#" class="logo">
+                <img src="../public/img/logo.png" alt="logo de la web">
+                <h1 class="nombre-web">NutriStack</h1>
+            </a>
+            <nav onclick="scrollToElement(event)">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#menus" class="nav-link">Menus</a>
+            </nav>
+        </header>
+        <section class="inicio-bento" id="inicio">
+            <figure>
+                <img src="../public/img/vegan.png" alt="plato vegano">
+                <div class="capa">
+                    <h3>SALUD Y COMODIDAD</h3>
+                    <p>¡A SOLO UN CLICK DE DISTANCIA!</p>
+                    <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
+                </div>
+            </figure>
+            <figure>
+                <img src="../public/img/ensalada.png" alt="plato de ensalada">
+                <div class="capa">
+                    <h3>MENÚ VEGGIE</h3>
+                    <p>¡DESCUBRE NUESTROS PLATOS!</p>
+                    <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
+                </div>
+            </figure>
+            <figure>
+                <img src="../public/img/keto.png" alt="plato de dieta keto">
+                <div class="capa">
+                    <h3>MENÚ KETO</h3>
+                    <p>¡DESCUBRE NUESTROS PLATOS!</p>
+                    <img src="../public/img/cubiertos.png" alt="logo de cubiertos">
+                </div>
+            </figure>
+            <section class="detalles-menu">
+                <h3>¿Que ofrecemos?</h3>
+                <ul>
+                    <li>Menús a la carta</li>
+                    <li>Menús personalizados</li>
+                    <li>Envíos gratis</li>
+                    <li>App y asesoramiento nutricional</li>
+                </ul>
+                <button class="boton tipo1">
+                    <span class="btn-txt">¡Quiero saber más!</span>
+                </button>
             </section>
-            <section class="planes">
-                <h2>¡Elige tu plan!</h2>
-                <div class="slide-container">
-                    <div class="slide-content">
-                        <div class="card-wrapper">
-                            <div class="card">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <h3 class="name">Bajar de peso</h3>
-                                    <div class="card-image">
-                                        <img src="../public/img/bajar-peso.png" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <ul>
-                                        <li>Platos saciantes</li>
-                                        <li>Nutritivos</li>
-                                        <li>¡Y deliciosos!</li>
-                                    </ul>
-                                    <button class="boton tipo1">
-                                        <span class="btn-txt">Elegir Plan</span>
-                                    </button>
+        </section>
+        <section class="eleccion-plan" id="planes">
+            <h2>¡Elige tu plan!</h2>
+            <div class="slide-container">
+                <div class="slide-content">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <h3 class="name">Bajar de peso</h3>
+                                <div class="card-image">
+                                    <img src="../public/img/bajar-peso.png" alt="" class="card-img">
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <h3 class="name">Mantenimiento</h3>
-                                    <div class="card-image">
-                                        <img src="../public/img/matenimiento.png" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <ul>
-                                        <li>Recetas originales</li>
-                                        <li>Equilibradas</li>
-                                        <li>Variadas</li>
-                                    </ul>
-                                    <button class="boton tipo1">
-                                        <span class="btn-txt">Elegir Plan</span>
-                                    </button>
+                            <div class="card-content">
+                                <ul>
+                                    <li>Platos saciantes</li>
+                                    <li>Nutritivos</li>
+                                    <li>¡Y deliciosos!</li>
+                                </ul>
+                                <button class="boton tipo1">
+                                    <span class="btn-txt">Elegir Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <h3 class="name">Mantenimiento</h3>
+                                <div class="card-image">
+                                    <img src="../public/img/matenimiento.png" alt="" class="card-img">
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <h3 class="name">Subir de peso</h3>
-                                    <div class="card-image">
-                                        <img src="../public/img/subir-peso.png" alt="" class="card-img">
-                                    </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li>Recetas originales</li>
+                                    <li>Equilibradas</li>
+                                    <li>Variadas</li>
+                                </ul>
+                                <button class="boton tipo1">
+                                    <span class="btn-txt">Elegir Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <h3 class="name">Subir de peso</h3>
+                                <div class="card-image">
+                                    <img src="../public/img/subir-peso.png" alt="" class="card-img">
                                 </div>
-                                <div class="card-content">
-                                    <ul>
-                                        <li>Festín de sabores</li>
-                                        <li>Digestivos</li>
-                                        <li>Tentadores</li>
-                                    </ul>
-                                    <button class="boton tipo1">
-                                        <span class="btn-txt">Elegir Plan</span>
-                                    </button>
-                                </div>
+                            </div>
+                            <div class="card-content">
+                                <ul>
+                                    <li>Festín de sabores</li>
+                                    <li>Digestivos</li>
+                                    <li>Tentadores</li>
+                                </ul>
+                                <button class="boton tipo1">
+                                    <span class="btn-txt">Elegir Plan</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="contenedor-fondo2">
-                <div class="fondo2"></div>
             </div>
+        </section>
+        <section class="productos" id="productos">
+
+            <!-- TODO: REALIZAR UN SCROLL HORIZONTAL INFINITO PARA MOSTRAR TODOS NUESTROS PRODUCTOS -->
+
+            <div class="producto"></div>
+            <div class="producto"></div>
+            <div class="producto"></div>
+            <div class="producto"></div>
+            <div class="producto"></div>
+            <div class="producto"></div>
+        </section>
+        <section class="menus" id="menus">
+            <button class="boton tipo1">
+                <span class="btn-txt">Filtrar por:</span>
+            </button>
+            <div class="menus-filtrados">
+
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            
+                    <!-- TODO: REALIZAR PEDIR EN UNA FUTURA REUNION SOLUCION PARA MOSTRAR LOS MENUS DE LA BASE DE DATOS -->
+                    <!-- AQUI SE DEBEN MOSTRAR LOS MENUS FILTRADOS DE LA BASE DE DATOS  -->
+
+            </div>
+        </section>
+        <div class="contenedor-fondo2">
+            <div class="fondo2"></div>
         </div>
+    </div>
+
+    <script src="../public/js/scroll-to-element.js"></script>
+    <script src="../public/js/header-controll.js"></script>
 
 </body>
 

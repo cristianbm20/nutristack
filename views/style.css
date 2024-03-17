@@ -37,8 +37,8 @@ body {
 }
 
 header {
+    position: fixed;
     margin-top: 20px;
-    margin-bottom: 18vh;
     display: flex;
     justify-content: space-around;
     height: 70px;
@@ -46,6 +46,7 @@ header {
     align-items: center;
     border-radius: 10px;
     width: 70%;
+    transition: top 0.3s ease;
 }
 
 .nombre-web {
@@ -86,6 +87,7 @@ nav a:hover {
 
 
 .inicio-bento {
+    margin-top: 28vh;
     top: 32vh;
     left: 0;
     right: 0;
@@ -247,16 +249,16 @@ figure .capa img {
 }
 
 
-/* PARTE 2 */
+/* ELECCION DE PLAN */
 
-.planes{
+.eleccion-plan{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.planes h2{
+.eleccion-plan h2{
     font-size: 64px;
 }
 
@@ -359,6 +361,54 @@ figure .capa img {
     color: #000000;
     border: 1px solid #252525;
 }
+
+/* PLANES */
+
+.productos{
+    margin-top: 250px;
+    display: grid;
+    max-width: 1300px;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px 33px;
+    place-items: center;
+}
+
+.productos .producto{
+    height: 350px;
+    width: 100%;
+    background-color: rgba(246, 246, 246, 0.85);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+ /* FILTROS PARA MOSTRAR LOS MENUS */
+
+ .menus{
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 80vw;
+ }
+
+ .filtro{
+
+ }
+
+ .menus-filtrados{
+    max-width: 1050px;
+    width: 100%;
+ }
+
+ .menus-filtrados .menu{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 33px;
+    background-color: rgba(246, 246, 246, 0.85);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+ }
 
 /* LOGIN */
 
