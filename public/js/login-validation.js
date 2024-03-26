@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const errors = []
 
     // User validation
-    if (!user || user.length < 3) {
-      errors.push('El email no es válido')
+    if (!user || user.length < 3 || !user.includes('@') || !user.includes('.')) {
+      errors.push('El correo electrónico no es válido')
     }
 
     // Password validation
-    if (!password || password.length < 6) {
-      errors.push('La contraseña debe tener al menos 6 caracteres')
+    if (!password || password.length < 6 || !/\d/.test(password) || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      errors.push('La contraseña debe tener al menos 6 caracteres, un número y un carácter especial')
     }
 
     // Error handling
