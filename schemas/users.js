@@ -8,7 +8,7 @@ const userSchema = z.object({
   surname: z.string({
     required_error: 'Username is required'
   }).min(3).max(24),
-  phone: z.string().min(3).max(24).regex(/^[0-9]{10}$/),
+  phone: z.string().min(3).max(24).regex(/^[0-9]{9}$/),
   email: z.string({
     required_error: 'Email is required'
   }).min(3).max(24).regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/),
