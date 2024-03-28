@@ -5,12 +5,13 @@ jest.mock('../schemas/users', () => ({
   validateUser: jest.fn()
 }))
 
-describe('UsersController', () => {
+describe('Tests for UsersController', () => {
   let usersController
   let userModelMock
   let reqMock
   let resMock
 
+  // Restart mocks before each test
   beforeEach(() => {
     userModelMock = {
       getByEmail: jest.fn()
@@ -25,8 +26,8 @@ describe('UsersController', () => {
     }
   })
 
-  describe('create method', () => {
-    test('should respond with 400 status code when validation fails', () => {
+  describe('Test for create method', () => {
+    test('Should respond with 400 status code when validation fails', () => {
       validateUser.mockReturnValueOnce({ error: { errors: 'Invalid data' } })
 
       usersController.create(reqMock, resMock)
@@ -35,7 +36,7 @@ describe('UsersController', () => {
       expect(resMock.json).toHaveBeenCalledWith({ error: 'Invalid data' })
     })
 
-    test('should respond with 201 status code when validation succeeds', () => {
+    test('Should respond with 201 status code when validation succeeds', () => {
       validateUser.mockReturnValueOnce({ data: 'Valid data' })
 
       usersController.create(reqMock, resMock)
@@ -45,8 +46,8 @@ describe('UsersController', () => {
     })
   })
 
-  describe('login method', () => {
-    test('should respond with the user email when the user exists', async () => {
+  describe('Test for login method', () => {
+    test('Should respond with the user email when the user exists', async () => {
       reqMock.params.email = 'user@example.com'
       userModelMock.getByEmail.mockResolvedValueOnce('user@example.com')
 
@@ -55,7 +56,7 @@ describe('UsersController', () => {
       expect(resMock.json).toHaveBeenCalledWith('user@example.com')
     })
 
-    test('should respond with 404 status code when the user does not exist', async () => {
+    test('Should respond with 404 status code when the user does not exist', async () => {
       reqMock.params.email = 'user@example.com'
       userModelMock.getByEmail.mockResolvedValueOnce(null)
 
